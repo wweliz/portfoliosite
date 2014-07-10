@@ -1,8 +1,9 @@
+/* global _, Backbone */
 'use strict';
 
 // BIO VIEW //////////////////////////////////////////////////////////////
 var BioView = Backbone.View.extend({
-
+	className : 'bio',
 	bioTemplate: _.template($('.bio-template').text()),
 
 	events: {

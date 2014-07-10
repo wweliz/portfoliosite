@@ -1,3 +1,6 @@
+//////////////////////////////////////////////////////////////////////////
+// UNIVERSAL STYLING /////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
 body {
 	font-family: Arial, Sans-Serif;
 	font-size: 14px;
@@ -6,33 +9,17 @@ body {
 	margin: 0;
 }
 
-h1, h2, h3, h4 {
-	font-family: 'Droid Serif', serif;
-	margin: 0;
-	padding: 0;
-}
-
-.header {
-	height: 100px;
-	background-color: rgba(0, 145, 202, 0.15);
-
-	.container {
-		width: 80%;
-		margin: 0 auto;
-
-		p {
-			display: inline-block;
-			font-size: 0.9rem;
-			line-height: 100px;
-			margin: 0;
-		}
-	}
-}
-
 .main-container {
 	width: 80%;
 	margin: 0 auto;
 	padding-bottom: 50px;
+}
+
+
+h1, h2, h3, h4 {
+	font-family: 'Droid Serif', serif;
+	margin: 0;
+	padding: 0;
 }
 
 .button {
@@ -58,17 +45,38 @@ h1, h2, h3, h4 {
 	}
 }
 
-input {
-	background-color: #f9f9f9;
-	height: 16px;
-	width: 350px;
-	padding: 4px;
-	margin: 2px;
-	border: 1px solid #dcdcdc;
+//////////////////////////////////////////////////////////////////////////
+// HEADER STYLING ////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
 
-	&.changed {background: #ffcccc;}
+.header {
+	height: 100px;
+	background-color: rgba(0, 145, 202, 0.15);
+
+	.container {
+		width: 80%;
+		margin: 0 auto;
+
+		.nav {
+			display: inline-block;
+			font-size: 0.9rem;
+			line-height: 100px;
+			margin: 0;
+		}
+	}
 }
 
+
+//////////////////////////////////////////////////////////////////////////
+// BIO VIEW STYLING //////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+.herotext{
+	font-size: 4em;
+}
+
+//////////////////////////////////////////////////////////////////////////
+// FOOTER STYLING ////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
 .footer {
 	width: 100%;
 	height:50px;

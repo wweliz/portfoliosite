@@ -27,18 +27,33 @@
 		<div class="header">
 			<div class="container">
 				<img class="logo-wew" src="../images/wew-logo-32px.png">
-	  		<p class="nav">BIO</p>
-	  		<p class="nav">WORK</p>
-	  		<p class="nav">RESUME</p>		
+				<a class="nav" href="#bio">BIO</a>
+				<a class="nav" href="#resume">RESUME</a>
+				<a class="nav" href="#work">WORK</a>
 			</div>
 		</div>
 		
 		<div class="main-container">
-			<div class="about">
-				<h3>About</h3>
-					<p>I’m passionate about designing and developing creating clean, simple visual solutions that speak across boundaries. With work experience in the US and overseas, I’ve got the know-how to help your brand SHOUT (or whisper) to improve your bottom line. To do that, I believe in getting my hands dirty – from the first client meeting to the final press check, from updates and edits to a brand overhaul.</p>
-			</div>
+			<div class="bio-view"></div>
+			<div class="resume-view"></div>
+			<div class="work-view"></div>
+		</div> <!-- closes main container div -->
 
+		<div class="footer">
+  		<div class="container">
+	  		<p class="nav">Imprint</p>
+	  		<p class="nav">©2014 Whitney Williams. All Rights Reserved</p>
+	  		<img class="twitter" src="../images/twitter-white-32px.png">
+	  		<img class="github" src="../images/github-white-32px.png">
+  		</div>
+    </div>		
+
+		<!-- Scripts -->
+		<script type="text/template" class="bio-template">
+			<p class="herotext">I develop clean, simple solutions <br> that speak across boundaries.</p>
+		</script>
+
+		<script type="text/template" class="resume-template">
 			<div class="software">
 				<h3>Software</h3>
 				<ul>
@@ -117,18 +132,10 @@
 					<h4>Hochschule Magdeburg-Stendal</h4>
 						<p>Design Studies, German Magdeburg, Germany 2007-2008</p>
 			</div>
-		</div> <!-- closes main container div -->
+		</script>
 
-		<div class="footer">
-  		<div class="container">
-	  		<p class="nav">Imprint</p>
-	  		<p class="nav">©2014 Whitney Williams. All Rights Reserved</p>
-	  		<img class="twitter" src="../images/twitter-white-32px.png">
-	  		<img class="github" src="../images/github-white-32px.png">
-  		</div>
-    </div>		
-
-		<!-- Scripts -->
+		<script type="text/template" class="work-template">
+		</script>
 
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<script>
@@ -152,7 +159,7 @@
 		<script src="scripts/bioview.js"></script>
 		<script src="scripts/resumeview.js"></script>
 		<script src="scripts/workview.js"></script>
-		<script src="scripts/main.js"></script>
+		<script src="scripts/router.js"></script>
 		<!-- endbuild -->
 	</body>
 </html>

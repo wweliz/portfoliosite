@@ -1,3 +1,4 @@
+/* global Backbone */
 'use strict';
 
 // THE APP ROUTER ////////////////////////////////////////////////////////
@@ -11,25 +12,31 @@ var AppRouter = Backbone.Router.extend({
 	},
 
 	initialize: function(){
-		this.renderBioView();
+		this.currentView = null;
 	},
 
   renderBioView: function(){
-		new BioView();
+  	this.swap( new BioView() );
   },
 
   renderResumeView: function(){
-  	new ResumeView();
+  	this.swap( new ResumeView() );
   },
 
   renderWorkView: function(){
-  	new WorkView();
+  	this.swap( new WorkView() );
+  },
+
+  swap: function(view){
+    if (this.currentView) this.currentView.remove();
+    this.currentView = view;
+    this.currentView.render();
   }
 
 });
 
 //instantiate the router
-// var router = new AppRouter;
-// Backbone.history.start();
+new AppRouter();
+Backbone.history.start();
 
 console.log('router.js file loaded');
