@@ -6,6 +6,7 @@
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" href="/favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
 		<!-- build:css styles/vendor.css -->
@@ -23,7 +24,20 @@
 	</head>
 
 	<body>
+		<div class="header">
+			<div class="container">
+				<img class="logo-wew" src="../images/wew-logo-32px.png">
+	  		<p class="nav">BIO</p>
+	  		<p class="nav">WORK</p>
+	  		<p class="nav">RESUME</p>		
+			</div>
+		</div>
+		
 		<div class="main-container">
+			<div class="about">
+				<h3>About</h3>
+					<p>I’m passionate about designing and developing creating clean, simple visual solutions that speak across boundaries. With work experience in the US and overseas, I’ve got the know-how to help your brand SHOUT (or whisper) to improve your bottom line. To do that, I believe in getting my hands dirty – from the first client meeting to the final press check, from updates and edits to a brand overhaul.</p>
+			</div>
 
 			<div class="software">
 				<h3>Software</h3>
@@ -102,8 +116,17 @@
 					<p>Bachelor of Fine Arts – Emphasis in Graphic Design 2009</p>
 					<h4>Hochschule Magdeburg-Stendal</h4>
 						<p>Design Studies, German Magdeburg, Germany 2007-2008</p>
-			</div>					
+			</div>
 		</div> <!-- closes main container div -->
+
+		<div class="footer">
+  		<div class="container">
+	  		<p class="nav">Imprint</p>
+	  		<p class="nav">©2014 Whitney Williams. All Rights Reserved</p>
+	  		<img class="twitter" src="../images/twitter-white-32px.png">
+	  		<img class="github" src="../images/github-white-32px.png">
+  		</div>
+    </div>		
 
 		<!-- Scripts -->
 
@@ -120,6 +143,8 @@
 		<!-- build:js scripts/vendor.js -->
 		<!-- bower:js -->
 		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="bower_components/underscore/underscore.js"></script>
+		<script src="bower_components/backbone/backbone.js"></script>
 		<!-- endbower -->
 		<!-- endbuild -->
 
