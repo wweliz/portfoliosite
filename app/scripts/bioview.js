@@ -23,5 +23,3 @@ var BioView = Backbone.View.extend({
 	}
 
 });
-
-console.log('bioview.js file loaded');

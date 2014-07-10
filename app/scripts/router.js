@@ -38,5 +38,3 @@ var AppRouter = Backbone.Router.extend({
 //instantiate the router
 new AppRouter();
 Backbone.history.start();
-
-console.log('router.js file loaded');

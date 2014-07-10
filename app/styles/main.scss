@@ -15,6 +15,23 @@ body {
 	padding-bottom: 50px;
 }
 
+// a:hover, a:link, a:active, a:visited {
+// 	color: rgb(0, 145, 202);
+// 	text-decoration: none;
+// }
+
+// a:hover {
+// 	color: red;
+// 	text-decoration: underline;
+// }
+
+a {
+	color: rgb(0, 145, 202);
+	text-decoration: none;
+
+	&:hover {text-decoration: underline;}
+}
+
 
 h1, h2, h3, h4 {
 	font-family: 'Droid Serif', serif;
@@ -70,9 +87,8 @@ h1, h2, h3, h4 {
 //////////////////////////////////////////////////////////////////////////
 // BIO VIEW STYLING //////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
-.herotext{
-	font-size: 4em;
-}
+.introtext {font-size: 1.25em;}
+.herotext {color: rgb(0, 145, 202)}
 
 //////////////////////////////////////////////////////////////////////////
 // FOOTER STYLING ////////////////////////////////////////////////////////

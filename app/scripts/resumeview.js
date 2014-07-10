@@ -23,5 +23,3 @@ var ResumeView = Backbone.View.extend({
 	}
 
 });
-
-console.log('resumeview.js file loaded');

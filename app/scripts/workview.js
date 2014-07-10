@@ -23,5 +23,3 @@ var WorkView = Backbone.View.extend({
 	}
 
 });
-
-console.log('workview.js file loaded');
