@@ -1,12 +1,30 @@
 //////////////////////////////////////////////////////////////////////////
+// CSS RESET -- ERIC MEYER ///////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u,
+i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav, output,
+ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	// vertical-align: baseline;
+}
+
+//////////////////////////////////////////////////////////////////////////
 // UNIVERSAL STYLING /////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
 body {
-	font-family: Arial, Sans-Serif;
-	font-size: 14px;
+  font-family: "proxima-nova", sans-serif;
+	font-size: 1rem;
+	line-height: 1.6;
 	color: #666666;
 	vertical-align: top;
-	margin: 0;
 }
 
 .main-container {
@@ -14,16 +32,6 @@ body {
 	margin: 0 auto;
 	padding-bottom: 50px;
 }
-
-// a:hover, a:link, a:active, a:visited {
-// 	color: rgb(0, 145, 202);
-// 	text-decoration: none;
-// }
-
-// a:hover {
-// 	color: red;
-// 	text-decoration: underline;
-// }
 
 a {
 	color: rgb(0, 145, 202);
@@ -34,7 +42,6 @@ a {
 
 
 h1, h2, h3, h4 {
-	font-family: 'Droid Serif', serif;
 	margin: 0;
 	padding: 0;
 }
@@ -69,6 +76,7 @@ h1, h2, h3, h4 {
 .header {
 	height: 100px;
 	background-color: rgba(0, 145, 202, 0.15);
+	margin-bottom: 25px;
 
 	.container {
 		width: 80%;
@@ -87,8 +95,59 @@ h1, h2, h3, h4 {
 //////////////////////////////////////////////////////////////////////////
 // BIO VIEW STYLING //////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
-.introtext {font-size: 1.25em;}
-.herotext {color: rgb(0, 145, 202)}
+.herotext {
+	color: rgb(0, 145, 202);
+	p {margin: 0 0 0 0;}
+}
+
+//////////////////////////////////////////////////////////////////////////
+// RESUME VIEW STYLING ///////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+.menu-column {
+	width: 14.5%;
+	margin: 0 auto;
+	display: inline-block;
+	vertical-align: top;
+
+	.software-btn, .development-btn, .experience-btn, .download-btn {
+		font-size: 0.9rem;
+		// line-height: 100px;
+		// margin: 0;
+		height: 30px;
+		color: rgb(0, 145, 202);
+		text-decoration: none;
+		&:hover {text-decoration: underline;}
+	}
+}
+
+.content-column {
+	width: 85%;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+//////////////////////////////////////////////////////////////////////////
+// WORK VIEW STYLING /////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+.project-tile {
+
+	h1 {
+		height: 70px;
+	}
+	img {width: 100%}
+
+	width: 29.333333%;
+	float: left;
+
+	margin: .75%;
+	padding: 1%;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 8px;
+	border-color: #0091ca;
+	display: inline-block;
+	.project-text {width: 100%;}
+}
 
 //////////////////////////////////////////////////////////////////////////
 // FOOTER STYLING ////////////////////////////////////////////////////////

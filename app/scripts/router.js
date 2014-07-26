@@ -4,11 +4,11 @@
 // THE APP ROUTER ////////////////////////////////////////////////////////
 var AppRouter = Backbone.Router.extend({
 	routes: {
-		//URL to match		//function called when the hash matches
-		''					: 'renderBioView',				//	url/#
-		'bio'				: 'renderBioView',				//	url/#bio
-		'resume'		: 'renderResumeView',			//	url/#resume
-		'work'			: 'renderWorkView',				//	url/#work
+		//URL to match	//function called when the hash matches
+		''							: 'renderBioView',				//	url/#
+		'bio'						: 'renderBioView',				//	url/#bio
+		'resume'				: 'renderResumeView',			//	url/#resume
+		'work'					: 'renderWorkView',				//	url/#work
 	},
 
 	initialize: function(){
