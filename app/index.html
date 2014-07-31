@@ -25,29 +25,38 @@
 	</head>
 
 	<body>
-		<div class="header">
-			<div class="container">
-				<img class="logo-wew" src="../images/wew-logo-32px.png">
-				<a class="nav" href="#bio">BIO</a>
-				<a class="nav" href="#resume">RESUME</a>
-				<a class="nav" href="#work">WORK</a>
-			</div>
-		</div> <!-- closes header div -->
-		
 		<div class="main-container">
+			
+			<div class="header">
+				<div class="logo-space">
+					<img class="logo-wew" src="../images/wew-logo-32px.png">
+					<p class="my-name">Whitney Williams</p>
+				</div>
+
+				<div class="portfolio-border"></div>
+
+				<div class="main-menu">
+					<a class="nav" href="#bio">BIO</a>
+					<a class="nav" href="#resume">RESUME</a>
+					<a class="nav" href="#work">WORK</a>
+				</div>
+			</div> <!-- closes header div -->
+
 			<div class="bio-view"></div>
 			<div class="resume-view"></div>
 			<div class="work-view"></div>
+			<div class="project-view"></div>
+
 		</div> <!-- closes main container div -->
 
 		<div class="footer">
   		<div class="container">
-	  		<p class="nav">Imprint</p>
-	  		<p class="nav">©2014 Whitney Williams. All Rights Reserved</p>
+	  		<p>© 2014 Whitney Williams</p>
 	  		<img class="twitter" src="../images/twitter-white-32px.png">
 	  		<img class="github" src="../images/github-white-32px.png">
   		</div>
     </div> <!-- closes footer div -->
+
 
 		<!-- Scripts -->
 		<script type="text/template" class="bio-template">
@@ -58,15 +67,13 @@
 		</script>
 
 		<script type="text/template" class="resume-template">
-			<div class="menu-column">
-				<div class="software-btn">Software</div>
-				<div class="development-btn">Development</div>
-				<div class="experience-btn">Experience</div>
-				<div class="download-btn">
-					<a href="WhitneyWilliamsResume.pdf" download="WhitneyWilliamsResume.pdf"> Download Resume </a>
-				</div>
-			</div>
 			<div class="content-column">
+				<div class="initial-content">
+					<h1>The Highlights</h1>
+					<p>I'm a Mac girl through and through, but I keep up with Windows so that I can teach HTML and CSS to little kids using PCs.</p>
+					<p>I make pretty print things with the Adobe Creative Suite and write code in SublimeText. I've got solid JavaScript skills, am not afraid of the command line, and think that git is the best thing since sliced bread.</p>
+					<p>I have a comprehensive knowledge of front-end development and design best practices, brand management, typography, photography and the printing process and can clearly communicate project objectives, delegate tasks, implement standards, resolve problems, and adhere to project timeline and budget. I learn new tools and frameworks quickly and like tackling complex problems.</p>
+				</div>
 				<div class="software">
 					<h1>Software</h1>
 						<p>Adobe Bridge</p>
@@ -142,100 +149,73 @@
 							<p>Design Studies, German Magdeburg, Germany 2007-2008</p>
 				</div>
 			</div>
+
+			<div class="menu-column">
+				<div class="software-btn">Software</div>
+				<div class="development-btn">Development</div>
+				<div class="experience-btn">Experience</div>
+				<div class="education-btn">Education</div>
+				<div class="download-btn">
+					<a href="WhitneyWilliamsResume.pdf" download="WhitneyWilliamsResume.pdf"> Download Resume </a>
+				</div>
+			</div>
 		</script>
 
 		<script type="text/template" class="work-template">
-			<div class="project-tile">
-				<h1>Mice On Main: The App</h1>
-				<img src="http://placehold.it/350x150">
-				<div class="project-text">
-					<p>Short description.</p>
-					<p>View the project live <a href="###">here</a>, or check out my code on <a href="###">GitHub</a>.</p>
-					<h3>Build Summary:</h3>
-					<p>HTML, Sass, etc.</p>
+			<div class="portfolio-content">
+				<div class="project-tile" id="miceonmain">
+					<img src="http://placehold.it/350x150">
+					<p>Mice On Main: The App</p>
+				</div>
+
+				<div class="project-tile" id="githubrebuild">
+					<img src="../images/github-rebuild-front.png">
+					<p>Github Profile Rebuild</p>
+				</div>
+
+				<div class="project-tile" id="rolldice">
+					<img src="../images/dice-front.png">
+					<p>Roll The Dice</p>
+				</div>
+
+				<div class="project-tile" id="eskimo">
+					<img src="../images/eskimo-front.png">
+					<p>English Theatre Berlin Playbill</p>
+				</div>
+
+				<div class="project-tile" id="chomarat">
+					<img src="../images/chomarat-front.png">
+					<p>Chomarat Rebrand</p>
+				</div>
+
+				<div class="project-tile" id="hoowaki">
+					<img src="../images/hoowaki-front.png">
+					<p>Hoowaki Brand Development</p>
+				</div>
+
+				<div class="project-tile" id="photography">
+					<img src="../images/old-barn-front.png">
+					<p>Photography</p>
+				</div>
+
+				<div class="project-tile" id="fluor">
+					<img src="../images/tss-front.png">
+					<p>Fluor Government Group Cutsheet</p>
+				</div>
+
+				<div class="project-tile" id="scansource">
+					<img src="../images/scansource-front.png">
+					<p>ScanSource Marketing Rate Card</p>
 				</div>
 			</div>
 
-			<div class="project-tile">
-				<h1>Github Profile Rebuild</h1>
-				<img src="http://placehold.it/350x150">
-				<div class="project-text">
-					<p>Short description.</p>
-					<p>View the project live <a href="###">here</a>, or check out my code on <a href="###">GitHub</a>.</p>
-					<h3>Build Summary:</h3>
-					<p>HTML, Sass, etc.</p>
-				</div>
-			</div>
+			<div class="sidebar">
+				<p class="project-text">Short description.</p>
+			</div> <!-- closes sidebar div -->
+		</script>
 
-			<div class="project-tile">
-				<h1>Roll The Dice</h1>
-				<img src="http://placehold.it/350x150">
-				<div class="project-text">
-					<p>Short description.</p>
-					<p>View the project live <a href="###">here</a>, or check out my code on <a href="###">GitHub</a>.</p>
-					<h3>Build Summary:</h3>
-					<p>HTML, Sass, etc.</p>
-				</div>
-			</div>
-
-			<div class="project-tile">
-				<h1>English Theatre Berlin Playbill</h1>
-				<img src="../images/eskimo-front.png">
-				<div class="project-text">
-					<p>Short description.</p>
-				</div>
-			</div>
-
-			<div class="project-tile">
-				<h1>Chomarat Rebrand</h1>
-				<img src="../images/chomarat-front.png">
-				<div class="project-text">
-					<p>Short description.</p>
-				</div>
-			</div>
-
-			<div class="project-tile">
-				<h1>Hoowaki Brand Development</h1>
-				<img src="../images/hoowaki-front.png">
-				<div class="project-text">
-					<p>Short description.</p>
-				</div>
-			</div>
-
-			<div class="project-tile">
-				<h1>Photography</h1>
-				<img src="../images/old-barn-front.png">
-				<div class="project-text">
-					<p>Short description.</p>
-				</div>
-			</div>
-
-			<div class="project-tile">
-				<h1>Fluor Government Group Cutsheet</h1>
-				<img src="../images/tss-front.png">
-				<div class="project-text">
-					<p>Fluor offers a full range of professional and technical support services for government clients and contractors through its Technical Support Services organization.</p>
-				</div>
-			</div>
-
-			<div class="project-tile">
-				<h1>ScanSource</h1>
-				<img src="../images/scansource-front.png">
-				<div class="project-text">
-					<p>Short description.</p>
-				</div>
-			</div>
-
-			<div class="project-tile">
-				<h1>Project Name</h1>
-				<img src="http://placehold.it/350x150">
-				<div class="project-text">
-					<p>Short description.</p>
-					<p>View the project live <a href="###">here</a>, or check out my code on <a href="###">GitHub</a>.</p>
-					<h3>Build Summary:</h3>
-					<p>HTML, Sass, etc.</p>
-				</div>
-			</div>
+		<script type="text/template" class="project-template">
+			<p>The project id is: <%= id %> </p>
 		</script>
 
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -262,6 +242,8 @@
 		<script src="scripts/bioview.js"></script>
 		<script src="scripts/resumeview.js"></script>
 		<script src="scripts/workview.js"></script>
+		<script src="scripts/projectview.js"></script>
+		<script src="scripts/main.js"></script>
 		<script src="scripts/router.js"></script>
 		<!-- endbuild -->
 	</body>

@@ -9,6 +9,8 @@ var AppRouter = Backbone.Router.extend({
 		'bio'						: 'renderBioView',				//	url/#bio
 		'resume'				: 'renderResumeView',			//	url/#resume
 		'work'					: 'renderWorkView',				//	url/#work
+		'work/:id'			: 'renderProjectView',		//	url/#work/projectid
+		'project'				: 'renderPV',		
 	},
 
 	initialize: function(){
@@ -25,6 +27,17 @@ var AppRouter = Backbone.Router.extend({
 
   renderWorkView: function(){
   	this.swap( new WorkView() );
+  },
+
+  renderPV: function(){
+  	this.swap( new ProjectView() );
+  },
+
+  renderProjectView: function(id){
+  	// var project = projectCollection.find(id);
+  	// this.swap( new ProjectView( {model: projectArray} ) );
+
+  	//var projects = new projectCollection(projectArray);
   },
 
   swap: function(view){

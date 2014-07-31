@@ -11,8 +11,8 @@ ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
+	// font-size: 100%;
+	// font: inherit;
 	// vertical-align: baseline;
 }
 
@@ -21,29 +21,22 @@ ruby, section, summary, time, mark, audio, video {
 //////////////////////////////////////////////////////////////////////////
 body {
   font-family: "proxima-nova", sans-serif;
-	font-size: 1rem;
+	font-size: 1em;
 	line-height: 1.6;
 	color: #666666;
 	vertical-align: top;
 }
 
 .main-container {
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
-	padding-bottom: 50px;
+	padding-bottom: 15px;
 }
 
 a {
 	color: rgb(0, 145, 202);
 	text-decoration: none;
-
-	&:hover {text-decoration: underline;}
-}
-
-
-h1, h2, h3, h4 {
-	margin: 0;
-	padding: 0;
+	&:hover { text-decoration: underline; }
 }
 
 .button {
@@ -61,7 +54,7 @@ h1, h2, h3, h4 {
 	padding: 4px;
 	margin: 2px;
 
-	&:hover {background-color:#e9e9e9;}
+	&:hover { background-color:#e9e9e9; }
 
 	&:active {
 		position:relative;
@@ -73,80 +66,108 @@ h1, h2, h3, h4 {
 // HEADER STYLING ////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
 
-.header {
-	height: 100px;
-	background-color: rgba(0, 145, 202, 0.15);
-	margin-bottom: 25px;
+.header { margin-bottom: 15px; }
 
-	.container {
-		width: 80%;
-		margin: 0 auto;
+.logo-space {
+	height: 50px;
 
-		.nav {
-			display: inline-block;
-			font-size: 0.9rem;
-			line-height: 100px;
-			margin: 0;
-		}
+	.logo-wew {
+		height: 50px;
+		width: 50px;
+		display: inline-block;
+	}
+
+	.my-name {
+		font-size: 24px;
+		color: rgb(0, 145, 202);
+		display: inline-block;
 	}
 }
 
+.portfolio-border {
+	height: 25px;
+	width: 75%;
+	background: url(..//images/dots.png) repeat-x left bottom;
+	display: inline-block;
+}
+
+.main-menu {
+	height: 25px;
+	width: 23%;
+	background: url(..//images/dots.png) repeat-x left bottom;
+	display: inline-block;
+	float: right;
+	a { font-size: 0.75em; }
+}
 
 //////////////////////////////////////////////////////////////////////////
 // BIO VIEW STYLING //////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
 .herotext {
 	color: rgb(0, 145, 202);
-	p {margin: 0 0 0 0;}
+	p { margin: 0 0 0 0; }
 }
 
 //////////////////////////////////////////////////////////////////////////
 // RESUME VIEW STYLING ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
-.menu-column {
-	width: 14.5%;
-	margin: 0 auto;
+.content-column {
+	width: 75%;
 	display: inline-block;
-	vertical-align: top;
+}
 
-	.software-btn, .development-btn, .experience-btn, .download-btn {
+.menu-column {
+	width: 23%;
+	display: inline-block;
+	float: right;
+
+	.software-btn, .development-btn, .experience-btn, .education-btn, .download-btn {
 		font-size: 0.9rem;
-		// line-height: 100px;
-		// margin: 0;
 		height: 30px;
 		color: rgb(0, 145, 202);
 		text-decoration: none;
-		&:hover {text-decoration: underline;}
+		&:hover { text-decoration: underline; }
 	}
 }
 
-.content-column {
-	width: 85%;
-	margin: 0 auto;
-	display: inline-block;
+.initial-content p {
+	margin-bottom: 15px;
 }
 
 //////////////////////////////////////////////////////////////////////////
 // WORK VIEW STYLING /////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////
-.project-tile {
+//// PORTFOLIO CONTENT ///////////////////////////////////////////////////
 
-	h1 {
-		height: 70px;
-	}
-	img {width: 100%}
-
-	width: 29.333333%;
-	float: left;
-
-	margin: .75%;
-	padding: 1%;
-	border-style: solid;
-	border-width: 2px;
-	border-radius: 8px;
-	border-color: #0091ca;
+.portfolio-content {
+	width: 75%;
 	display: inline-block;
-	.project-text {width: 100%;}
+
+	.project-tile{
+		img {width: 100%}
+		width: 31%;
+		float: left;
+		margin: 0 3.5% 3.5% 0;
+		display: inline-block;
+
+		p {
+			font-size: 0.85em;
+			line-height: 1.5em;
+		}
+	}
+
+	.project-tile:nth-child(3n+3) {margin-right: 0;}
+}
+
+//// SIDEBAR STYLING /////////////////////////////////////////////////////
+
+.sidebar {
+	width: 23%;
+	display: inline-block;
+	float: right;
+}
+
+.project-text {
+	//
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -161,14 +182,26 @@ h1, h2, h3, h4 {
 	background-color: rgba(0, 145, 202, 0.15);
 
 	.container {
-		width: 80%;
+		width: 90%;
 		margin: 0 auto;
+		//padding: 13px 0 13px 0;
 
 		p {
 			display: inline-block;
-			font-size: 0.9rem;
+			font-size: 0.975em;
 			line-height: 50px;
 			margin: 0;
 		}
 	}
+
+	img {
+		height: 24px;
+		margin: 0 auto;
+	}
 }
+
+
+
+
+
+

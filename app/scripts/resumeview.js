@@ -9,7 +9,8 @@ var ResumeView = Backbone.View.extend({
 	events: {
 		'click .software-btn'			: 'showSoftware',
 		'click .development-btn'	: 'showDevelopment',
-		'click .experience-btn'		: 'showExperience'
+		'click .experience-btn'		: 'showExperience',
+		'click .education-btn'		: 'showEducation'
 	},
 
 	initialize: function(){
@@ -19,28 +20,35 @@ var ResumeView = Backbone.View.extend({
 
 	render: function(){
 		this.$el.html(this.resumeTemplate);
+		this.showInitial();
 		return this;
 	},
 
+	showInitial: function(){
+		$('.software').hide();
+		$('.development').hide();
+		$('.experience').hide();
+		$('.education').hide();
+	},
+
 	showSoftware: function(){
+		$('.initial-content').hide();
 		$('.software').toggle('slow');
 	},
 
 	showDevelopment: function(){
+		$('.initial-content').hide();
 		$('.development').toggle('slow');
 	},
 
 	showExperience: function(){
+		$('.initial-content').hide();
 		$('.experience').toggle('slow');
+	},
+
+	showEducation: function(){
+		$('.initial-content').hide();
+		$('.education').toggle('slow');
 	}
 
-});
-
-//////////////////////////////////////////////////////////////////////////
-// HIDE TOGGLE DIVS ON PAGE LOAD /////////////////////////////////////////
-$(document).ready(function() {
-	$('.software').hide();
-	$('.development').hide();
-	$('.experience').hide();
-	$('.education').hide();
 });
