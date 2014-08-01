@@ -4,7 +4,7 @@
 // PROJECT VIEW //////////////////////////////////////////////////////////
 var ProjectView = Backbone.View.extend({
 
-	workTemplate: _.template($('.project-template').text()),
+	projectTemplate: _.template($('.project-template').text()),
 
 	events: {
 		//
@@ -16,7 +16,7 @@ var ProjectView = Backbone.View.extend({
 	},
 
 	render: function(){
-		this.$el.html(this.workTemplate);
+		this.$el.html(this.projectTemplate);
 		return this;
 	}
 

@@ -24,7 +24,7 @@ var projectArray = [
 		id:			'miceonmain',
 		image:	'http://placehold.it/350x150',
 		title:	'Mice On Main: The App',
-		text:		'Short description.',
+		text:		'Short description about mice.',
 		links:	'View the project live <a href="###">here</a>, or check out my code on <a href="###">GitHub</a>.'
 	},
 
@@ -95,16 +95,12 @@ var projectArray = [
 
 // PROJECT MODEL /////////////////////////////////////////////////////////
 
-var projects = new projectCollection(projectArray);
+// var projects = new projectCollection(projectArray);
 
-var x = $(projectArray).find(id);
-
-
-// // ////// INJURED PLAYERS VIEW INSTANCE //////////////////////
-// //creates a new collection instance
-// var injuredPlayers = new InjuredCollection();
-// //forEaches over the collection instance
-// injuredPlayers.each(function(playerModel){
-// 		//creates a new view using the player model
-// 		new InjuredView({model: playerModel});
-// });
+//creates a new collection instance
+var projects = new projectCollection();
+//eaches over the collection instance
+projects.each(function(projectArray){
+	//creates a new view using the Project model
+	new ProjectView({model:Project});
+});
