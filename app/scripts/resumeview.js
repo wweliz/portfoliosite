@@ -7,10 +7,11 @@ var ResumeView = Backbone.View.extend({
 	resumeTemplate: _.template($('.resume-template').text()),
 
 	events: {
-		'click .software-btn'			: 'showSoftware',
-		'click .development-btn'	: 'showDevelopment',
-		'click .experience-btn'		: 'showExperience',
-		'click .education-btn'		: 'showEducation'
+		'click .hide-initial-btn'			: 'hideInitial',
+		// 'click .software-btn'			: 'showSoftware',
+		// 'click .development-btn'	: 'showDevelopment',
+		// 'click .experience-btn'		: 'showExperience',
+		// 'click .education-btn'		: 'showEducation'
 	},
 
 	initialize: function(){
@@ -31,24 +32,32 @@ var ResumeView = Backbone.View.extend({
 		$('.education').hide();
 	},
 
-	showSoftware: function(){
-		$('.initial-content').hide();
-		$('.software').toggle('slow');
-	},
+	hideInitial: function(){
+		console.log('hide initial button clicked');
+		// $('.initial-content').remove();
+		// $('.software').show();
+		// $('.development').show();
+		// $('.experience').show();
+		// $('.education').show();
+	// },
+	// showSoftware: function(){
+	// 	$('.initial-content').hide();
+	// 	$('.software').toggle('slow');
+	// },
 
-	showDevelopment: function(){
-		$('.initial-content').hide();
-		$('.development').toggle('slow');
-	},
+	// showDevelopment: function(){
+	// 	$('.initial-content').hide();
+	// 	$('.development').toggle('slow');
+	// },
 
-	showExperience: function(){
-		$('.initial-content').hide();
-		$('.experience').toggle('slow');
-	},
+	// showExperience: function(){
+	// 	$('.initial-content').hide();
+	// 	$('.experience').toggle('slow');
+	// },
 
-	showEducation: function(){
-		$('.initial-content').hide();
-		$('.education').toggle('slow');
+	// showEducation: function(){
+	// 	$('.initial-content').hide();
+	// 	$('.education').toggle('slow');
 	}
 
 });

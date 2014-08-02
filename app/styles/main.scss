@@ -111,30 +111,50 @@ a {
 .content-column {
 	width: 75%;
 	display: inline-block;
+	margin-bottom: 55px;
 }
 
 .sidebar {
 	width: 23%;
 	display: inline-block;
 	float: right;
+	margin-bottom: 55px;
 }
 
 //////////////////////////////////////////////////////////////////////////
 // BIO VIEW STYLING //////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
+.introtext {
+	margin-bottom: 15px;
+}
+
 .herotext {
+	line-height: 1.2;
 	color: rgb(0, 145, 202);
 	p { margin: 0 0 0 0; }
+	margin-bottom: 15px;
+}
+
+.follow-up-text {
+	max-width: 388px;
 }
 
 //////////////////////////////////////////////////////////////////////////
 // RESUME VIEW STYLING ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
-.education {
-	h4, p {display: inline-block;}
+
+.initial-content, .software, .development, .experience, .education {
+	max-width: 388px;
+	p { margin-bottom: 10px; }
 }
 
-.software-btn, .development-btn, .experience-btn, .education-btn, .download-btn {
+.software{
+	.no-space {
+		margin-bottom: 0;
+	}
+}
+
+.hide-initial-btn, .software-btn, .development-btn, .experience-btn, .education-btn, .download-btn {
 	font-size: 0.9rem;
 	height: 30px;
 	color: rgb(0, 145, 202);
@@ -142,8 +162,26 @@ a {
 	&:hover { text-decoration: underline; }
 }
 
-.initial-content p {
-	margin-bottom: 15px;
+
+.hide-initial-btn {
+	height: 10px;
+	width: 15px;
+	background-color: yellow;
+}
+
+.sub-content-left {
+	background-color: red;
+	min-height: 10px;
+	width: 45%;
+	display: inline-block;
+}
+
+.sub-content-right {
+	background-color: blue;
+	min-height: 10px;
+	width: 45%;
+	display: inline-block;
+	//float: right;
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -176,22 +214,27 @@ a {
 //////////////////////////////////////////////////////////////////////////
 .footer {
 	width: 100%;
-	height:50px;
-	margin: 0 auto;
+	height:40px;
+	margin-top: 15px;
 	position: fixed;
 	bottom: 0;
-	background-color: rgba(0, 145, 202, 0.15);
+	background-color: #d8eef6;
 
 	.container {
 		width: 90%;
 		margin: 0 auto;
+		padding-top: 9px;
 
 		p {
-			display: inline-block;
+			float: left;
 			font-size: 0.975em;
-			line-height: 50px;
+			margin-right: 15px;
 		}
 	}
 
-	img { height: 24px; }
+	img {
+		float: left;
+		height: 24px;
+		margin-right: 10px;
+	}
 }
