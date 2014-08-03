@@ -8,10 +8,6 @@ var ResumeView = Backbone.View.extend({
 
 	events: {
 		'click .hide-initial-btn'			: 'hideInitial',
-		// 'click .software-btn'			: 'showSoftware',
-		// 'click .development-btn'	: 'showDevelopment',
-		// 'click .experience-btn'		: 'showExperience',
-		// 'click .education-btn'		: 'showEducation'
 	},
 
 	initialize: function(){
@@ -26,38 +22,15 @@ var ResumeView = Backbone.View.extend({
 	},
 
 	showInitial: function(){
-		$('.software').hide();
-		$('.development').hide();
-		$('.experience').hide();
-		$('.education').hide();
+		$('.sub-content-left').hide();
+		$('.sub-content-right').hide();
 	},
 
 	hideInitial: function(){
 		console.log('hide initial button clicked');
-		// $('.initial-content').remove();
-		// $('.software').show();
-		// $('.development').show();
-		// $('.experience').show();
-		// $('.education').show();
-	// },
-	// showSoftware: function(){
-	// 	$('.initial-content').hide();
-	// 	$('.software').toggle('slow');
-	// },
-
-	// showDevelopment: function(){
-	// 	$('.initial-content').hide();
-	// 	$('.development').toggle('slow');
-	// },
-
-	// showExperience: function(){
-	// 	$('.initial-content').hide();
-	// 	$('.experience').toggle('slow');
-	// },
-
-	// showEducation: function(){
-	// 	$('.initial-content').hide();
-	// 	$('.education').toggle('slow');
+		$('.initial-content').remove();
+		$('.sub-content-left').toggle('slow');
+		$('.sub-content-right').toggle('slow');
 	}
 
 });

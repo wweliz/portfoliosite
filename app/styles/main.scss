@@ -89,7 +89,7 @@ a {
 	}
 }
 
-.portfolio-border {
+.dotted-border-left {
 	height: 25px;
 	width: 75%;
 	background: url(..//images/dots.png) repeat-x left bottom;
@@ -142,46 +142,31 @@ a {
 //////////////////////////////////////////////////////////////////////////
 // RESUME VIEW STYLING ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
+//// CONTENT COLUMN //
+.sub-content-left {
+	width: 48.75%;
+	display: inline-block;
+}
 
 .initial-content, .software, .development, .experience, .education {
 	max-width: 388px;
 	p { margin-bottom: 10px; }
 }
 
-.software{
-	.no-space {
-		margin-bottom: 0;
-	}
+.sub-content-right {
+	width: 48.75%;
+	display: inline-block;
+	float: right;
 }
 
-.hide-initial-btn, .software-btn, .development-btn, .experience-btn, .education-btn, .download-btn {
+//// SIDEBAR //
+.hide-initial-btn, .software-btn, .development-btn, .experience-btn, 
+.education-btn, .download-btn {
 	font-size: 0.9rem;
 	height: 30px;
 	color: rgb(0, 145, 202);
 	text-decoration: none;
 	&:hover { text-decoration: underline; }
-}
-
-
-.hide-initial-btn {
-	height: 10px;
-	width: 15px;
-	background-color: yellow;
-}
-
-.sub-content-left {
-	background-color: red;
-	min-height: 10px;
-	width: 45%;
-	display: inline-block;
-}
-
-.sub-content-right {
-	background-color: blue;
-	min-height: 10px;
-	width: 45%;
-	display: inline-block;
-	//float: right;
 }
 
 //////////////////////////////////////////////////////////////////////////
