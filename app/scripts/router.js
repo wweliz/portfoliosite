@@ -6,10 +6,9 @@ var AppRouter = Backbone.Router.extend({
 	routes: {
 		//URL to match	//function called when the hash matches
 		''							: 'renderBioView',				//	url/#
-		'bio'						: 'renderBioView',				//	url/#bio
 		'resume'				: 'renderResumeView',			//	url/#resume
-		'work'					: 'renderWorkView',				//	url/#work
-		'work/:id'			: 'renderProjectView',		//	url/#work/projectid
+		'portfolio'			: 'renderWorkView',				//	url/#portfolio
+		'work/:id'			: 'renderProjectView',		//	url/#portfolio/projectid
 		'project'				: 'renderPV',		
 	},
 
