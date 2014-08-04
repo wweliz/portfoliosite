@@ -7,7 +7,7 @@ var ResumeView = Backbone.View.extend({
 	resumeTemplate: _.template($('.resume-template').text()),
 
 	events: {
-		'click .hide-initial-btn'			: 'hideInitial',
+		'click .show-resume-btn'	: 'showResume',
 	},
 
 	initialize: function(){
@@ -26,7 +26,7 @@ var ResumeView = Backbone.View.extend({
 		$('.sub-content-right').hide();
 	},
 
-	hideInitial: function(){
+	showResume: function(){
 		console.log('hide initial button clicked');
 		$('.initial-content').remove();
 		$('.sub-content-left').toggle('slow');
