@@ -30,7 +30,7 @@ var WorkView = Backbone.View.extend({
 	},
 
 	showMiceSummary: function(){
-		$('.project-text').html('Mice On Main is a webapp that utilizes the HTML5 geolocation API to help visitors to Greenville\'s downtown find the mice sculptures hidden along Main Street.');
+		$('.project-text').html('Mice On Main is a webapp that utilizes the HTML5 geolocation API to help visitors to Greenville find the mice sculptures hidden along Main Street.');
 	},
 
 	showGithubSummary: function(){
@@ -46,11 +46,11 @@ var WorkView = Backbone.View.extend({
 	},
 
 	showChomaratSummary: function(){
-		$('.project-text').html('Headquarted in Le Cheylard, France, Chomarat's American base of operations is located in Anderson, SC. After a major expansion in 2009, the company needed help implementing their new brand identity in the American market.');
+		$('.project-text').html('Headquarted in Le Cheylard, France, Chomarat\'s American base of operations is located in Anderson, SC. After a major expansion in 2009, the company needed help implementing their new brand identity in the American market.');
 	},
 
 	showHoowakiSummary: function(){
-		$('.project-text').html('Hoowaki is a micro technology startup based in Clemson, SC. I worked with the company's founders to develop the brand identity and style guide.');
+		$('.project-text').html('Hoowaki is a micro technology startup based in Clemson, SC. I worked with the company\'s founders to develop the brand identity and style guide.');
 	},
 
 	showPhotoSummary: function(){
@@ -58,11 +58,11 @@ var WorkView = Backbone.View.extend({
 	},
 
 	showFluorSummary: function(){
-		$('.project-text').html('Fluor Government Group executes contracts for numerous goverment organizations; they needed a flexible, concise marketing piece with a list of the Technical Suppport Service organization's common offerings to hand out at trade shows or email to potential clients.');
+		$('.project-text').html('Fluor Government Group executes contracts for numerous goverment organizations; they needed a flexible, concise marketing piece with a list of the Technical Suppport Service organization\'s common offerings to hand out at trade shows or email to potential clients.');
 	},
 
 	showScanSourceSummary: function(){
-		$('.project-text').html('ScanSource's product managers needed a quick reference for common marketing projects; this rate lists the basic elements of each project, as well as the cost to execute.');
+		$('.project-text').html('ScanSource\'s product managers needed a quick reference for common marketing projects; this rate lists the basic elements of each project, as well as the cost to execute.');
 	}
 
 });
