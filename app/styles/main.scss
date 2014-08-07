@@ -11,9 +11,6 @@ ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	// font-size: 100%;
-	// font: inherit;
-	// vertical-align: baseline;
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -111,7 +108,6 @@ a {
 //////////////////////////////////////////////////////////////////////////
 // RESUME PAGE STYLING ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
-//// CONTENT COLUMN //
 .sub-content-left {
 	width: 48.75%;
 	display: inline-block;
@@ -128,7 +124,6 @@ a {
 	float: right;
 }
 
-//// SIDEBAR //
 .show-resume-btn, .download-btn {
 	font-size: 0.9rem;
 	height: 30px;
