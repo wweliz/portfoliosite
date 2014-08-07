@@ -1,4 +1,4 @@
-/* global Backbone */
+/* global Backbone, BioView, ResumeView, MiceOnMainView, GitHubRebuildView, RollDiceView, EskimoView, ChomaratView, HoowakiView, PhotographyView, FluorView, ScansourceView, WorkView,  */
 'use strict';
 
 // THE APP ROUTER ////////////////////////////////////////////////////////
@@ -36,12 +36,12 @@ var AppRouter = Backbone.Router.extend({
   	this.swap( new WorkView() );
   },
 
-  renderProjectView: function(id){
+  // renderProjectView: function(id){
   	// var project = projectCollection.find(id);
   	// this.swap( new ProjectView( {model: projectArray} ) );
 
   	//var projects = new projectCollection(projectArray);
-  },
+  // },
 
   renderMiceOnMain: function(){
   	this.swap( new MiceOnMainView() );
