@@ -30,7 +30,7 @@ var WorkView = Backbone.View.extend({
 	},
 
 	showMiceSummary: function(){
-		$('.project-text').html('Mice On Main is a webapp that utilizes the HTML5 geolocation API to help visitors to Greenville's downtown find the mice sculptures hidden along Main Street.');
+		$('.project-text').html('Mice On Main is a webapp that utilizes the HTML5 geolocation API to help visitors to Greenville\'s downtown find the mice sculptures hidden along Main Street.');
 	},
 
 	showGithubSummary: function(){
