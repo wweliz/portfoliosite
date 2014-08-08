@@ -129,7 +129,6 @@ a {
 
 .show-resume-btn, .show-highlights-btn, .download-btn {
 	font-size: 0.9rem;
-	height: 30px;
 	color: rgb(0, 145, 202);
 	text-decoration: none;
 	cursor: pointer;
@@ -233,3 +232,53 @@ a {
 		margin-right: 10px;
 	}
 }
+
+//////////////////////////////////////////////////////////////////////////
+// MEDIA QUERIES /////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+// @media screen and (max-width:1050px) {
+// 	// HEADER STYLING /////////////////////////////
+// 	.header {
+// 		height: 55px;
+// 		margin: 10px 0 10px 0;
+// 	}
+
+// 	.logo-space{
+// 		height: 25px;
+// 		margin-bottom: 10px;
+		
+// 		.logo-wew {
+// 			height: 25px;
+// 			width: 25px;
+// 		}
+
+// 		.my-name {
+// 			font-size: 1em;
+// 			line-height: 1;
+// 		}
+// 	}
+
+// 	.dotted-border-left {
+// 		height: 1px;
+// 		width: 100%;
+// 		display: block;
+// 	}
+
+// 	.main-menu { width: 100%; }
+
+// 	// SINGLE COLUMN STYLING //////////////////////
+// 	.content-column {
+// 		width: 100%;
+// 		display: block;
+// 		margin-bottom: 15px
+// 	}
+
+// 	.sidebar {
+// 		width: 100%;
+// 		display: block;
+// 		margin-bottom: 5px;
+// 	}
+
+// }
+
+//END MQs
