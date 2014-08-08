@@ -72,7 +72,10 @@ a {
 	background: url(..//images/dots.png) repeat-x left bottom;
 	display: inline-block;
 	float: right;
-	a { font-size: 0.75em; }
+	a {
+		margin-right: 5px;
+		// font-size: 0.75em;
+	}
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -124,7 +127,7 @@ a {
 	float: right;
 }
 
-.show-resume-btn, .download-btn {
+.show-resume-btn, .show-highlights-btn, .download-btn {
 	font-size: 0.9rem;
 	height: 30px;
 	color: rgb(0, 145, 202);

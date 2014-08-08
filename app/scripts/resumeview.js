@@ -7,7 +7,8 @@ var ResumeView = Backbone.View.extend({
 	resumeTemplate: _.template($('.resume-template').text()),
 
 	events: {
-		'click .show-resume-btn'	: 'showResume',
+		'click .show-highlights-btn'	:	'showHighlights',
+		'click .show-resume-btn'			: 'showResume'
 	},
 
 	initialize: function(){
@@ -22,13 +23,25 @@ var ResumeView = Backbone.View.extend({
 	},
 
 	showInitial: function(){
+		$('.show-highlights-btn').hide();
 		$('.sub-content-left').hide();
 		$('.sub-content-right').hide();
 	},
 
+	showHighlights: function(){
+		console.log('show highlights button clicked');
+		$('.show-highlights-btn').hide();
+		$('.sub-content-left').hide('slow');
+		$('.show-resume-btn').toggle();
+		$('.sub-content-right').hide('slow');
+		$('.initial-content').toggle('slow');
+	},
+
 	showResume: function(){
-		console.log('hide initial button clicked');
-		$('.initial-content').remove();
+		console.log('show resume button clicked');
+		$('.show-resume-btn').hide();
+		$('.initial-content').hide();
+		$('.show-highlights-btn').toggle();
 		$('.sub-content-left').toggle('slow');
 		$('.sub-content-right').toggle('slow');
 	}
